@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp } from "lucide-react";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
 export function Header() {
   return (
@@ -22,6 +23,8 @@ export function Header() {
             <span className="text-sm text-success font-semibold">$1.23</span>
             <TrendingUp className="w-3 h-3 text-success" />
           </div>
+
+          <ThemeToggle />
 
           <Button variant="default" size="sm">
             Connect Wallet
