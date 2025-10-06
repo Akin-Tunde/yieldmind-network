@@ -1,73 +1,42 @@
-# Welcome to your Lovable project
+This document provides a comprehensive overview of the **AI Yield Network**, a decentralized, AI-powered DeFi protocol.
 
-## Project info
+### Project Overview
 
-**URL**: https://lovable.dev/projects/befa3ea0-8cb2-42ff-99a3-549f6a666d42
+The AI Yield Network is a multi-sided ecosystem designed to optimize yield generation through the use of artificial intelligence. Built on the Base Network, it creates a symbiotic relationship between liquidity providers, compute contributors, and governance token holders. Users can deposit assets into AI-managed vaults, contribute GPU power to train models, and participate in the governance of the protocol.
 
-## How can I edit this code?
+### Key Features
 
-There are several ways of editing your application.
+*   **📈 AI-Managed Yield Vaults:** Users can deposit their assets (like USDC and ETH) into vaults that employ sophisticated, AI-driven strategies to generate yield. Each vault's performance is tied to a specific, verifiable AI model.
+*   **💻 Decentralized Compute Network:** Users can contribute their unused GPU power to the network. This distributed computing power is used to train and backtest the AI models that manage the yield vaults. Contributors are rewarded for their participation with the protocol's native token, `$AIBOT`.
+*   **🗳️ Staking & Governance:** Holders of the `$AIBOT` token can stake their tokens to earn a share of the protocol's revenue. Staking also grants voting power, allowing users to participate in governance proposals, such as approving new AI models for production or adjusting protocol fees.
+*   **🤖 Verifiable AI Model Registry:** The platform features a transparent, on-chain registry of all AI models. The performance of these models is continuously tracked and verified, ensuring transparency and trust in the strategies being employed.
+*   **📊 Comprehensive Dashboard:** A central "Ecosystem Hub" provides users with a complete overview of the network's health, including Total Value Locked (TVL), total compute power, and staking statistics. It also summarizes a user's personal net worth and earnings across all platform activities.
 
-**Use Lovable**
+### Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/befa3ea0-8cb2-42ff-99a3-549f6a666d42) and start prompting.
+The project is built with a modern and robust technology stack:
 
-Changes made via Lovable will be committed automatically to this repo.
+*   **Frontend Framework:** React with TypeScript, powered by Vite for a fast and efficient development experience.
+*   **Styling:** Tailwind CSS is used for its utility-first approach, combined with `shadcn/ui` for a library of pre-built, accessible, and themeable components.
+*   **Routing:** React Router is used for client-side navigation between pages.
+*   **State Management:** TanStack Query is utilized for data fetching, caching, and server state management.
+*   **Theming:** The application supports both light and dark modes through `next-themes` and a CSS variable-based theme system.
 
-**Use your preferred IDE**
+### Project Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The codebase is organized in a modular fashion to ensure scalability and maintainability. The core application logic resides in the `src` directory:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+*   `components/`: Contains reusable React components, organized by feature (e.g., `dashboard`, `layout`, `theme`) and a generic `ui` library.
+*   `hooks/`: For custom React hooks that encapsulate reusable logic.
+*   `lib/`: Includes utility functions used throughout the application.
+*   `pages/`: Contains the top-level components for each of the application's main routes.
 
-Follow these steps:
+### Application Pages
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The platform is structured into several key pages:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/befa3ea0-8cb2-42ff-99a3-549f6a666d42) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*   **Dashboard (`/`):** The main entry point, providing an overview of the ecosystem and personal stats.
+*   **Yield Vaults (`/vaults`):** A list of available AI-managed vaults where users can deposit assets.
+*   **Contribute Compute (`/compute`):** The page where users can find information and tools to contribute their GPU power.
+*   **Stake & Govern (`/stake`):** The interface for staking `$AIBOT` tokens and participating in governance.
+*   **AI Model Registry (`/models`):** A transparent view of all submitted AI models and their performance metrics.
